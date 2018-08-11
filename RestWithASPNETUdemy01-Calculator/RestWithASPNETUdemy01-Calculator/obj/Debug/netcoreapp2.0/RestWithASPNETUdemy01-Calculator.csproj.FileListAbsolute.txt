@@ -3,7 +3,6 @@ D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithAS
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\bin\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.runtimeconfig.dev.json
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\bin\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.dll
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\bin\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.pdb
-D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\obj\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.csprojAssemblyReference.cache
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\obj\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.csproj.CoreCompileInputs.cache
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\obj\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.AssemblyInfoInputs.cache
 D:\ProjetoAulas\RestWithASP-NETUdemy\RestWithASPNETUdemy01-Calculator\RestWithASPNETUdemy01-Calculator\obj\Debug\netcoreapp2.0\RestWithASPNETUdemy01-Calculator.AssemblyInfo.cs
