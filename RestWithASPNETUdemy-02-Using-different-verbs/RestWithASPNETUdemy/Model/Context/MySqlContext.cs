@@ -8,11 +8,11 @@ namespace RestWithASPNETUdemy.Model.Context
 {
     public class MySqlContext : DbContext
     {
-        protected MySqlContext()
+        public MySqlContext()
         {
         }
 
-        protected MySqlContext(DbContextOptions<MySqlContext> options) : base(options)
+        public MySqlContext(DbContextOptions<MySqlContext> options) : base(options)
         {
         }
 
