@@ -31,13 +31,13 @@ namespace RestWithASPNETUdemy.Repository.Implementattions
 
         public void Delete(long id)
         {
-            var result = _context.Person.SingleOrDefault(x => x.Id.Equals(id));
+            var result = _context.Persons.SingleOrDefault(x => x.Id.Equals(id));
 
             try
             {
                 if(result != null)
                 {
-                    _context.Person.Remove(result);
+                    _context.Persons.Remove(result);
                     _context.SaveChanges();
                 }
                
@@ -51,20 +51,20 @@ namespace RestWithASPNETUdemy.Repository.Implementattions
 
         public List<Person> FindAll()
         {
-            return _context.Person.ToList();
+            return _context.Persons.ToList();
         }
 
         
         public Person FindById(long id)
         {
-            return _context.Person.SingleOrDefault(x => x.Id == id);
+            return _context.Persons.SingleOrDefault(x => x.Id == id);
         }
 
         public Person Update(Person person)
         {
-            if (!Exist(person.Id)) return new Person();
+            if (!Exist(person.Id)) return null;
 
-            var result = _context.Person.SingleOrDefault(x => x.Id.Equals(person.Id));
+            var result = _context.Persons.SingleOrDefault(x => x.Id.Equals(person.Id));
 
             try
             {
@@ -80,7 +80,7 @@ namespace RestWithASPNETUdemy.Repository.Implementattions
 
         public bool Exist(long? id)
         {
-            return _context.Person.Any(x => x.Id.Equals(id));
+            return _context.Persons.Any(x => x.Id.Equals(id));
         }
     }
 }

@@ -1,0 +1,7 @@
+﻿{
+  "Evolve.Driver": "MySQL.Data",
+  "Evolve.ConnectionString": "server=127.0.0.1;userid=root;password=Dax200542;persistsecurityinfo=True;database=rest_with_asp_net_udemy;allowuservariables=True",
+  "Evolve.Locations": "db",
+  "Evolve.Command": "migrate",
+  "Evolve.PlaceHolder.table4" : "table_4"
+}
