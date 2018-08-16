@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestWithASPNETUdemy.Business;
-using RestWithASPNETUdemy.Model;
+using RestWithASPNETUdemy.Data.VO;
 
 namespace RestWithASPNETUdemy.Controllers
-{    
+{
     [ApiVersion("1")]
     [Route("api/[controller]/v{version:apiVersion}")]
     public class PersonController : Controller
@@ -33,7 +33,7 @@ namespace RestWithASPNETUdemy.Controllers
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody]Person person)
+        public IActionResult Post([FromBody]PersonVO person)
         {
             
             if (person == null) return BadRequest();
@@ -42,7 +42,7 @@ namespace RestWithASPNETUdemy.Controllers
 
         // PUT api/values/5
         [HttpPut]
-        public IActionResult Put([FromBody]Person person)
+        public IActionResult Put([FromBody]PersonVO person)
         {
             if (person == null) return BadRequest();
             var updatePerson = _personBusiness.Update(person);
