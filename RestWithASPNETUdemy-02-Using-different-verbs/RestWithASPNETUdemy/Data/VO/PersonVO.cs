@@ -3,10 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Tapioca.HATEOAS;
 
 namespace RestWithASPNETUdemy.Data.VO
 {
-    public class PersonVO 
+    public class PersonVO : ISupportsHyperMedia
     {
         public long? Id { get; set; }
 
@@ -17,5 +18,7 @@ namespace RestWithASPNETUdemy.Data.VO
         public string Address { get; set; }
 
         public string Gender { get; set; }
+
+        public List<HyperMediaLink> Links { get; set; } = new List<HyperMediaLink>();
     }
 }
