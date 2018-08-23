@@ -2,6 +2,7 @@
 using RestWithASPNETUdemy.Business;
 using RestWithASPNETUdemy.Data.VO;
 using RestWithASPNETUdemy.Model;
+using System.Collections.Generic;
 using Tapioca.HATEOAS;
 
 namespace RestWithASPNETUdemy.Controllers
@@ -19,6 +20,10 @@ namespace RestWithASPNETUdemy.Controllers
 
         // GET api/values
         [HttpGet]
+        [ProducesResponseType(typeof(List<BookVO>), 200)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get()
         {
@@ -28,6 +33,10 @@ namespace RestWithASPNETUdemy.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(BookVO), 200)]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Get(long id)
         {
@@ -38,6 +47,9 @@ namespace RestWithASPNETUdemy.Controllers
 
         // POST api/values
         [HttpPost]
+        [ProducesResponseType(typeof(BookVO), 201)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Post([FromBody]BookVO book)
         {
@@ -49,6 +61,9 @@ namespace RestWithASPNETUdemy.Controllers
 
         // PUT api/values/5
         [HttpPut]
+        [ProducesResponseType(typeof(BookVO), 202)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Put([FromBody]BookVO book)
         {
@@ -60,6 +75,9 @@ namespace RestWithASPNETUdemy.Controllers
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
+        [ProducesResponseType(204)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(401)]
         [TypeFilter(typeof(HyperMediaFilter))]
         public IActionResult Delete(long id)
         {

@@ -6,6 +6,6 @@
 
         public string Issuer { get; set; }
 
-        public int seconds { get; set; }
+        public int Seconds { get; set; }
     }
 }
