@@ -111,6 +111,10 @@ namespace RestWithASPNETUdemy
             services.AddScoped<ILoginBusiness, LoginBusinessImpl>();
             services.AddScoped<IUserRepository, UserRepositoryImpl>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IPersonRepository, PersonRepositoryImpl>();
+            services.AddScoped<ILoginBusiness, LoginBusinessImpl>();
+
+
         }
 
         private void ExecuteMigrations(string connectionString)
